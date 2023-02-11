@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background: #1e1e1e;
+  padding: 80px 100px 0;
+}
+
+.flex {
+  display: flex;
+}
+.wysiwyg-output {
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+.button:not(:first-child) {
+  margin-left: 20px;
+}
+.button {
+  width: 35px;
+  height: 35px;
+  color: #639eff;
+  background: #282828;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.button:last-child {
+  width: auto;
+  background: transparent;
+  border: none;
+}
+
+/* <template>
+  <div class="flex flex-wrap">
+    <button @click="undo" class="button">
+        <i class="fa fa-rotate-left"></i>
+    </button>
+    <button @click="redo" class="button">
+        <i class="fa fa-rotate-right"></i>
+    </button>
+    <button @click="applyBold" class="button">
+        <i class="fa fa-bold"></i>
+    </button>
+    <button @click="applyItalic" class="button">
+        <i class="fa fa-italic"></i>
+    </button>
+    <button @click="applyHeading" class="button">
+        <i class="fa fa-header" aria-hidden="true"></i>
+    </button>
+    <button class="button" @click="copy">Копировать HTML</button>
+  </div>
+  <div>
+    <div
+      @input="onInput"
+      v-html="innerValue"
+      contenteditable="true"
+      class="wysiwyg-output outline-none border-2 p-4 rounded-lg border-gray-300 focus:border-green-300"
+    />
+  </div>
+</template> */
